@@ -1,4 +1,15 @@
 #!/bin/bash
+# /etc/init.d/selenium
+#
+### BEGIN INIT INFO
+# Provides:          selenium-server
+# Required-Start:    $remote_fs $syslog $network
+# Required-Stop:     $remote_fs $syslog $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start selenium grid at boot time
+# Description:       Controls the selenium grid server.
+### END INIT INFO
 
 case "${1:-''}" in
     'start')
